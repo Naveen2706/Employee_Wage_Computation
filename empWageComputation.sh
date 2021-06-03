@@ -7,6 +7,6 @@ else
 echo employee is absent
 fi
 
-fulldayhr=8
-perhrwage=20
-echo Daily Employee Wage is: "$(($fulldayhr*$perhrwage))"
+fulldhr=8
+wageperhr=20
+echo Fullday Employee Wage is: "$(($fulldayhr*$perhrwage))"
