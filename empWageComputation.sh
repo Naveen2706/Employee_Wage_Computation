@@ -1,17 +1,27 @@
+#! /bin/bash -x
 Welcome to employee wage computation
 
 x=$((RANDOM%2))
-if [[ $x -eq 1 ]];then
+case "$x" in
+"1")
 echo employee is present
-else
+;;
+"0")
 echo employee is absent
-fi
+;;
+esac
 
 fulldayhour=8
 parttimehour=4
 wagephour=20
 
+W=$((4+((4*$((RANDOM%2))))))
+case "$W" in
+"8")
 echo wage for fullday: "$(($fulldayhour*$wagephour))"
-
+;;
+"4")
 echo part time wage  : "$(($parttimehour*$wagephour))"
+;;
+esac
 
