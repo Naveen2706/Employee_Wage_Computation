@@ -7,9 +7,7 @@ else
 echo employee is absent
 fi
 
-fulldayhr=8
-wageperhour=20
-echo wage of day: "$(($fulldayhr*$wageperhour))"
-
-parttimehr=4
-echo part time wage is "$(($parttimehr*$wageperhour))"
+fulldayhour=8
+wagephour=20
+echo wage for fullday: "$(($fulldayhour*$wagephour))"
+ 
