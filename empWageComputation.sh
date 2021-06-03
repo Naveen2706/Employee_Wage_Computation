@@ -10,3 +10,6 @@ fi
 fulldayhr=8
 wageperhour=20
 echo wage of day: "$(($fulldayhr*$wageperhour))"
+
+parttimehr=4
+echo part time wage is "$(($parttimehr*$wageperhour))"
