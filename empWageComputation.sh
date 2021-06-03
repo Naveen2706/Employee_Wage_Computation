@@ -17,22 +17,24 @@ month=0
 totalhr=0
 totalwage=0
 
+function workhours
+{
 while [[ $month != 21 ]];do
 
 W=$((4+((4*$((RANDOM%2))))))
 case "$W" in
 "8")
-echo wage for fullday: "$(($fulldayhour*$wagephour))"
 totalhr=$(($totalhr+$W))
 ((month++))
 ;;
 
 "4")
-echo part time wage  : "$(($parttimehour*$wagephour))"
 totalhr=$(($totalhr+$W))
 ((month++))
 ;;
 esac
 done
-totalwage=$(($totalhr*20))
-echo wage for working for a month:"$totalwage"
+echo total work hours are "$totalhr"
+}
+
+workhours
