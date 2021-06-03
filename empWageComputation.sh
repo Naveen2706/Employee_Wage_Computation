@@ -9,4 +9,4 @@ fi
 
 fulldhr=8
 wageperhr=20
-echo Fullday Employee Wage is: "$(($fulldhr*$wageperhr))"
+echo Fullday Employee Wage is- "$(($fulldhr*$wageperhr))"
