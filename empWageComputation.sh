@@ -1,4 +1,3 @@
-#! /bin/bash -x
 Welcome to employee wage computation
 
 x=$((RANDOM%2))
